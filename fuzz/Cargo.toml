@@ -1,0 +1,32 @@
+[package]
+name = "litcrypt-fuzz"
+version = "0.1.0"
+authors = ["Automatically generated"]
+publish = false
+edition = "2018"
+
+[package.metadata]
+cargo-fuzz = true
+
+[dependencies]
+libfuzzer-sys = "0.4"
+
+[dependencies.litcrypt]
+path = ".."
+
+# Prevent this from interfering with workspaces
+[workspace]
+members = ["."]
+
+
+[[bin]]
+name = "lc"
+path = "fuzz_targets/lc.rs"
+test = false
+doc = false
+
+[[bin]]
+name = "lc_byte"
+path = "fuzz_targets/lc_byte.rs"
+test = false
+doc = false

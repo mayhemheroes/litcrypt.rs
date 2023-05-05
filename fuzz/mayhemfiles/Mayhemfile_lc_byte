@@ -1,0 +1,7 @@
+project: litcrypt.rs
+target: lc_byte
+duration: 90
+
+cmds:
+    - cmd: /lc_byte
+

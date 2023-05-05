@@ -1,0 +1,7 @@
+project: litcrypt.rs
+target: lc
+duration: 90
+
+cmds:
+    - cmd: /lc
+
