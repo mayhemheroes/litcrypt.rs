@@ -56,6 +56,7 @@ jobs:
         mayhemfile:
         - fuzz/mayhemfiles/Mayhemfile_lc
         - fuzz/mayhemfiles/Mayhemfile_lc_byte
+        - fuzz/mayhemfiles/Mayhemfile_enc_dec
     steps:
     - uses: actions/checkout@v3
     - name: Start analysis for ${{ matrix.mayhemfile }}

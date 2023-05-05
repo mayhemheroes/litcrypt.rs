@@ -21,3 +21,5 @@ FROM --platform=linux/amd64 rustlang/rust:nightly
 COPY --from=builder /litcrypt.rs/fuzz/target/x86_64-unknown-linux-gnu/release/lc /
 
 COPY --from=builder /litcrypt.rs/fuzz/target/x86_64-unknown-linux-gnu/release/lc_byte /
+
+COPY --from=builder /litcrypt.rs/fuzz/target/x86_64-unknown-linux-gnu/release/enc_dec /

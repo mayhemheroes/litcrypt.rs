@@ -30,3 +30,9 @@ name = "lc_byte"
 path = "fuzz_targets/lc_byte.rs"
 test = false
 doc = false
+
+[[bin]]
+name = "enc_dec"
+path = "fuzz_targets/enc_dec.rs"
+test = false
+doc = false
