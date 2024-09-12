@@ -1,0 +1,7 @@
+project: litcrypt.rs
+target: enc_dec
+duration: 90
+
+cmds:
+    - cmd: /enc_dec
+
